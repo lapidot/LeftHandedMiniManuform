@@ -31,7 +31,7 @@ extern keymap_config_t keymap_config;
 
 
 //lEFT HAND STUFF:
-#define CTRL_LEFT  LCTL(KC_LEFT)
+#define CTRL_LEFT  LCTL_T(KC_LEFT)
 #define CTRL_BS  LCTL(KC_BSPC)
 #define ARR_TAB LT(_ARROWS, KC_TAB)
 #define NUM_ENT LT(_NUMPAD, KC_ENT)
