@@ -29,10 +29,10 @@ KC_TAB,  KC_ESC,KC_LGUI,NUMPAD, KC_BSPC, CTLDEL,         SFT_ENT, KC_SPC,  ARROW
 */
 
 [_MIRROR] = LAYOUT(  /*MIRROR*/
-  KC_BSLASH,KC_P,	    KC_O,    KC_I,     KC_U,    KC_Y,           KC_MS_ACCEL0, KC_MS_BTN1,	KC_MS_UP,  KC_MS_BTN2, KC_Q,KC_BSLASH, \
-  _______,  TD(SCL),        KC_L,    KC_K,     KC_J,    KC_H,           KC_MS_ACCEL1, KC_MS_LEFT,	KC_MS_DOWN,KC_MS_RIGHT,KC_A,TD(QUO), \
-  TD(CLS),  CTL_T(KC_SLASH),KC_DOT,  KC_COMM,  KC_M,    KC_N,           KC_MS_ACCEL2, KC_V,		KC_MS_DOWN,KC_X,       KC_Z,KC_RSHIFT, \
-  KC_EQUAL, KC_M,  	    KC_R,    _______,  _______, _______,	LGUI(KC_DEL), KC_BSPC,	KC_TAB, TO(_WINBASE),_______, _______, \
+  KC_BSLASH,KC_P,	KC_O,	KC_I,	KC_U,    KC_Y,		KC_MS_ACCEL0, KC_MS_BTN1,	KC_MS_UP,  KC_MS_BTN2, KC_Q,KC_BSLASH, \
+  _______,  SHSQ,	CTRL_L,	ALT_K,	GUI_J,    KC_H,		KC_MS_ACCEL1, KC_MS_LEFT,	KC_MS_DOWN,KC_MS_RIGHT,KC_A,TD(QUO), \
+  TD(CLS),  SLASHES,	KC_DOT,	KC_COMM,KC_M,    KC_N,		KC_MS_ACCEL2, KC_V,		KC_MS_DOWN,KC_X,       KC_Z,KC_RSHIFT, \
+  KC_EQUAL, KC_QUES,	TD(QUO),	_______,_______, _______,	LGUI(KC_DEL), KC_BSPC,	KC_TAB, TO(_WINBASE),_______, _______, \
   _______, _______,        _______,  _______,  KC_DEL,  _______,	_______, _______,       _______, _______, _______ , _______\
   ),
 /*BATREUS:
@@ -45,10 +45,10 @@ CPYPST, KC_EQUAL, KC_MINUS,       _______,   KC_SPC, RSFT_T(KC_ENT),LGUI(KC_DEL)
 
 
 [_ARROWS] = LAYOUT(  /* RAISE - Arrows */
-  ALT_TAB, 	KC_VOLU,   	KC_HOME, KC_UP,   KC_PGUP,	XXXXXXX, XXXXXXX,  KC_HOME, KC_UP,   KC_PGUP,  XXXXXXX,   _______,\
-  _______, 	KC_LSFT,   	CTRL_LEFT, KC_LEFT, KC_RIGHT,	XXXXXXX, KC_PSCR,  KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX,   _______,\
-  _______, 	KC_VOLD,	KC_END,  KC_DOWN, KC_PGDN,	XXXXXXX, XXXXXXX,  KC_END,  KC_DOWN, KC_PGDN,  XXXXXXX,   _______,\
-  TO(_WINBASE),	KC_A,  KC_R,   	_______,   	_______,	_______, _______,  _______, _______, _______,  _______, _______, \
+  ALT_TAB, 	KC_VOLU,   	KC_HOME,   KC_UP,   KC_PGUP,	CURLY, XXXXXXX,  KC_HOME, KC_UP,   KC_PGUP,  XXXXXXX,   _______,\
+  _______, 	KC_LSFT,   	CTRL_LEFT, KC_LEFT, KC_RIGHT,	PARAN, KC_PSCR,  KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX,   _______,\
+  _______, 	KC_VOLD,	KC_END,    KC_DOWN, KC_PGDN,	SQUAR, XXXXXXX,  KC_END,  KC_DOWN, KC_PGDN,  XXXXXXX,   _______,\
+  TO(_WINBASE),	KC_MS_BTN1,	KC_MS_BTN2,   	_______,   	_______,	_______, _______,  _______, _______, _______,  _______, _______, \
   _______, 	_______,   	_______,   	_______,   	_______,	_______, _______,  _______, _______, _______, _______, _______\
 /*
 BATreus
@@ -56,6 +56,30 @@ BATreus
 
 Atreus
   _______, _______, _______, _______, _______, _______, _______,  _______,  FUNCTN,_______,  _______, _______, \
+
+*/
+
+),
+
+
+[_NUMPAD] = LAYOUT(  /* LOWER - Numpad */
+/*  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_QUES, KC_DQT,  KC_DEL,  \
+  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_QUES, KC_DQT,  KC_DEL,  \
+  KC_DEL,  KC_LBRC, KC_RBRC, KC_MINS, KC_UNDS, KC_HOME, KC_END,  KC_LPRN, KC_RPRN, KC_SLSH, KC_SCLN, KC_PGUP, \
+  CPYPST,  XXXXXXX, C(KC_X), KC_LABK, KC_RABK, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, KC_BSLS, KC_COLN, KC_PGDN, \
+  _______, _______, _______, _______, _______,      KC_TAB,      _______, _______, _______, _______, _______  \*/
+
+  ALT_TAB, KC_ESC, KC_7,   KC_8,	KC_9,   KC_0,		KC_ASTR,KC_7,   KC_8,	KC_9,   KC_0,    _______,\
+  LANGSWP, KC_LSFT, KC_4,   KC_5,	KC_6,   KC_PLUS,	KC_SLSH,KC_4,   KC_5,	KC_6,   KC_PLUS, KC_ASTR,\
+  _______, KC_MUTE, KC_1,   KC_2,	KC_3,	KC_MINS,	KC_0,	KC_1,   KC_2,	KC_3,	KC_MINS, KC_PLUS,\
+  _______, KC_0,  KC_KP_DOT, _______, _______,  _______,	_______,_______,KC_KP_DOT,TO(_WINBASE), _______, _______, \
+  _______, _______, _______, _______, _______,  _______, 	_______,_______,_______,_______, _______, _______\
+/*
+BATreus
+  _______, _______, FUNCTN, _______, _______, _______, _______,  _______, _______, FUNCTN,  _______, _______, \
+
+Atreus
+  _______, _______, _______, FUNCTN, _______, _______, _______,  _______ ,_______,_______,  _______, _______, \
 
 */
 
@@ -72,32 +96,8 @@ Atreus
   _______,	LCTL(KC_LALT),  KC_F7,  KC_F8,   KC_F9, KC_F10, 	XXXXXXX,KC_F7,  KC_F8,   KC_F9, KC_F10,  KC_F11,  \
   TO(_WINBASE), KC_LSHIFT, KC_F4,  KC_F5,   KC_F6, KC_F11,	XXXXXXX,KC_F4,  KC_F5,   KC_F6, KC_F11,  XXXXXXX, \
   XXXXXXX, 	KC_CAPS,   KC_F1,  KC_F2,   KC_F3, KC_F12,	XXXXXXX,KC_F1,  KC_F2,   KC_F3, KC_F12,  KC_F12,  \
-  RESET, 	KC_F,  	   RESET,   _______, _______, _______,	_______,_______,_______, _______,_______, _______,  \
+  RESET, 	LANGSWP,  	   RESET,   _______, _______, _______,	_______,_______,_______, _______,_______, _______,  \
   _______, 	_______,   _______,_______, _______, _______,	_______,XXXXXXX,MUV_DE,  MUV_IN, BL_TOGG, _______  \
-
-),
-
-
-[_NUMPAD] = LAYOUT(  /* LOWER - Numpad */
-/*  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_QUES, KC_DQT,  KC_DEL,  \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_QUES, KC_DQT,  KC_DEL,  \
-  KC_DEL,  KC_LBRC, KC_RBRC, KC_MINS, KC_UNDS, KC_HOME, KC_END,  KC_LPRN, KC_RPRN, KC_SLSH, KC_SCLN, KC_PGUP, \
-  CPYPST,  XXXXXXX, C(KC_X), KC_LABK, KC_RABK, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, KC_BSLS, KC_COLN, KC_PGDN, \
-  _______, _______, _______, _______, _______,      KC_TAB,      _______, _______, _______, _______, _______  \*/
-
-  ALT_TAB, KC_VOLU, KC_7,   KC_8,	KC_9,   KC_0,		KC_ASTR,KC_7,   KC_8,	KC_9,   KC_0,    _______,\
-  LANGSWP, KC_VOLD, KC_4,   KC_5,	KC_6,   KC_PLUS,	KC_SLSH,KC_4,   KC_5,	KC_6,   KC_PLUS, KC_ASTR,\
-  _______, KC_MUTE, KC_1,   KC_2,	KC_3,	KC_MINS,	KC_0,	KC_1,   KC_2,	KC_3,	KC_MINS, KC_PLUS,\
-  _______, KC_N,  KC_P, _______, _______,  _______,	_______,_______,KC_KP_DOT,TO(_WINBASE), _______, _______, \
-  _______, _______, _______, _______, _______,  _______, 	_______,_______,_______,_______, _______, _______\
-/*
-BATreus
-  _______, _______, FUNCTN, _______, _______, _______, _______,  _______, _______, FUNCTN,  _______, _______, \
-
-Atreus
-  _______, _______, _______, FUNCTN, _______, _______, _______,  _______ ,_______,_______,  _______, _______, \
-
-*/
 
 )
 };
